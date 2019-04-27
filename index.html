@@ -4,114 +4,34 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style type="text/css">
-h3 {
-	padding-left: 30px; /*盒子模型布局稳定性原则*/ width /*宽度剩余法*/ padding
-	/*会影响盒子大小，需要进行加减计算*/ margin; /*会有外边距合并的问题，ie6下经常会有bug*/
-	background-color: purple;}
-* {
-	padding: 0;
-	margin: 0;
-}
+/*transition过渡效果
+     property 属性 ,duration   持续时间,timing-function 过渡方式   , delya从何时开始
+     运动曲线 ：linear匀速
+     ease逐渐慢下来
+     ease-in加速
+     ease-out减速
+     ease-in-out先加后减速
+     */
+     /*所有属性都变化用all*/
+    
 div {
-	float: left;
-	 /*边框合并*/
+width: 200px;
+height: 200px;
+background-color: skyblue;
+background: url("11.jpg") right;
+background-size: cover;
+margin: 100px auto;
+transition: width 3s ease-in 0s, background 3s ease-in 0s,height 3s ease-in 0s;
 }
-.box {
-	background-color: white;
-	width: 100%;
-	height: 300px;
-	border: 0px solid skyblue;
-}
-hr {
-	margin-top: 30px;
-	margin-bottom: 41px;
-	margin-left: 51px;
-}
-
-.margin {
-	width: 51px;
-	border: 0px solid blue;
-	height: 156px;
-}
-div {
-	width: 160px;
-	border: 0px solid red;
-	height: 156px;
-	}
-div ul li {
-list-style: none;
-margin: 7px 0 0 0;
-}
-div ul li a{
-	font-size: 12px;
-    color: #757575;
-	text-decoration:none;
-	text-shadow: 0.2px 0.3px 0.2px #fff;
-	
-	}
-a:hover {
-color: #ff6700; 
-}
-.font {
-	font-size: 14px;
-	color: #424242;
-	margin-bottom: 23px;
-	margin-top: 0;
+div:hover {/*悬浮事件*/
+width: 100%;
+height: 800px;
+background: url("9.jpg") no-repeat;
+background-size: cover;
 }
 </style>
 </head>
 <body>
-	<div class="box">
-		<hr>
-		<div class="margin"></div>
-		<div>
-			<ul>
-				<li class="font">帮助中心</li>
-				<li><a href="#">账户管理</a></li>
-				<li><a href="#">购物指南</a></li>
-				<li><a href="#">订单操作</a></li>
-			</ul>
-		</div>
-		<div>
-			<ul>
-				<li class="font">服务支持</li>
-				<li><a href="#">售后政策</a></li>
-				<li><a href="#">自助服务</a></li>
-				<li><a href="#">相关下载</a></li>
-			</ul>
-		</div>
-		<div>
-			<ul>
-				<li class="font">线下门店</li>
-				<li><a href="#">小米之家</a></li>
-				<li><a href="#">服务网点</a></li>
-				<li><a href="#">授权体验店</a></li>
-			</ul>
-		</div>
-		<div>
-			<ul>
-				<li class="font">关于小米</li>
-				<li><a href="#">了解小米</a></li>
-				<li><a href="#">加入小米</a></li>
-				<li><a href="#">投资者关系</a></li>
-			</ul>
-		</div>
-		<div>
-			<ul>
-				<li class="font">关注我们</li>
-				<li><a href="#">新浪微博</a></li>
-				<li><a href="#">官方微信</a></li>
-				<li><a href="#">联系我们</a></li>
-			</ul>
-		</div>
-		<div>
-			<ul>
-				<li class="font">特色服务</li>
-				<li><a href="#">F 码通道</a></li>
-				<li><a href="#">礼物码</a></li>
-				<li><a href="#">防伪查询</a></li>
-			</ul>
-		</div>
-	</div>
+<div></div>
 </body>
 </html>
