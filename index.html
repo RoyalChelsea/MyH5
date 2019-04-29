@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="Shortcut Icon" href="9.jpg"/>
+<link rel="Shortcut Icon" href="9.jpg">
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>this is a pictures</title>
 <style type="text/css">
 body {
 background: skyblue url("20.jpg") no-repeat fixed;
@@ -16,8 +16,38 @@ size: 50px;
 div {
 width: 300px;
 height: 200px;
-margin-top: 100px;
+margin-top: 80px;
 /*overflow: hidden;/*溢出隐藏*/
+}
+section {
+width: 300px;
+height: 200px;
+margin: 300px auto;
+position: relative;
+transition: all 0.5s ease-in 0s;
+}
+section img {
+width: 300px;
+height: 200px;
+transition: all 0.5s ease-in 0s;
+transform-origin: top left;/*设置旋转中心*/
+box-sizing: border-box;
+position: absolute;
+}
+section:hover {
+transform: translateX(150px);
+}
+section:hover img:last-child {
+transform: rotate(360deg);/*移动距离*/
+}
+section:hover img:nth-child(2) {
+transform: rotate(180deg);/*移动距离*/
+}
+section:hover img:first-child {
+transform: rotate(90deg);/*移动距离*/
+}
+section:hover img:nth-child(3) {
+transform: rotate(270deg);/*移动距离*/
 }
 img {
 width: 300px;
@@ -26,27 +56,33 @@ transition: all 0.5s ease-in 0s;
 transform-origin: top left;/*设置旋转中心*/
 box-sizing: border-box;
 position: absolute;
+margin-left: 20px;
 }
 div:hover img:last-child {
-transform: translateX(0);/*旋转度数*/
+transform: translateX(0);/*移动距离*/
 }
 div:hover img:nth-child(2) {
-transform: translateX(640px);/*旋转度数*/
+transform: translateX(640px);/*移动距离*/
 }
 div:hover img:first-child {
-transform: translateX(960px);/*旋转度数*/
+transform: translateX(960px);/*移动距离*/
 }
 div:hover img:nth-child(3) {
-transform: translateX(320px);/*旋转度数*/
+transform: translateX(320px);/*移动距离*/
 }
 div:hover {
 box-shadow: 5px 1px 16px -3px rgba(0,0,0,.4);/*如果给图片添加box-shadow则会hidden*/
 }
+.fixed
 </style>
 </head>
 <body>
-<div>
-<img alt="" src="9.jpg" class="fixed"></div>
+<section>
+<img alt="" src="22.jpg">
+<img alt="" src="201.jpg">
+<img alt="" src="23.jpg">
+<img alt="" src="9.jpg">
+</section>
 <hr>
 <div class="rotate">
 <img alt="" src="22.jpg">
@@ -55,52 +91,16 @@ box-shadow: 5px 1px 16px -3px rgba(0,0,0,.4);/*如果给图片添加box-shadow�
 <img alt="" src="9.jpg">
 </div>
 <div class="rotate">
-<img alt="" src="22.jpg">
-<img alt="" src="20.jpg">
-<img alt="" src="23.jpg">
-<img alt="" src="9.jpg">
+<img alt="" src=".jpg">
+<img alt="" src="2.jpg">
+<img alt="" src="3.jpg">
+<img alt="" src="4.jpg">
 </div>
 <div class="rotate">
-<img alt="" src="22.jpg">
-<img alt="" src="20.jpg">
-<img alt="" src="23.jpg">
-<img alt="" src="9.jpg">
-</div>
-<div class="rotate">
-<img alt="" src="22.jpg">
-<img alt="" src="20.jpg">
-<img alt="" src="23.jpg">
-<img alt="" src="9.jpg">
-</div>
-<div class="rotate">
-<img alt="" src="22.jpg">
-<img alt="" src="20.jpg">
-<img alt="" src="23.jpg">
-<img alt="" src="9.jpg">
-</div>
-<div class="rotate">
-<img alt="" src="22.jpg">
-<img alt="" src="20.jpg">
-<img alt="" src="23.jpg">
-<img alt="" src="9.jpg">
-</div>
-<div class="rotate">
-<img alt="" src="22.jpg">
-<img alt="" src="20.jpg">
-<img alt="" src="23.jpg">
-<img alt="" src="9.jpg">
-</div>
-<div class="rotate">
-<img alt="" src="22.jpg">
-<img alt="" src="20.jpg">
-<img alt="" src="23.jpg">
-<img alt="" src="9.jpg">
-</div>
-<div class="rotate">
-<img alt="" src="22.jpg">
-<img alt="" src="20.jpg">
-<img alt="" src="23.jpg">
-<img alt="" src="9.jpg">
+<img alt="" src="5.jpg">
+<img alt="" src="6.jpg">
+<img alt="" src="10.jpg">
+<img alt="" src="8.jpg">
 </div>
 </body>
 </html>
